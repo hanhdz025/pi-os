@@ -1,13 +1,12 @@
 services:
   adguardhome:
-    image: 'adguard/adguardhome:latest'
-    container_name: 'adguard'
-    hostname: 'adguard'
-    restart: 'unless-stopped'
+    image: adguard/adguardhome:latest
+    container_name: adguardhome
+    restart: unless-stopped
     volumes:
-      - '/etc/localtime:/etc/localtime:ro'
-      - './work:/opt/adguardhome/work'
-      - './config:/opt/adguardhome/conf'
+      - /etc/localtime:/etc/localtime:ro
+      - ./work:/opt/adguardhome/work
+      - ./config:/opt/adguardhome/conf
     ports:
       # Plain DNS
       - '53:53/tcp'
