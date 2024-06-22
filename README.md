@@ -30,17 +30,3 @@ sudo usermod -aG docker $USER
 ```bash
 logout
 ```
-
-## Cài Đặt AdGuard Home
-#### Tạo thư mục AdGuard Home
-```bash
-mkdir adguardhome
-```
-#### Tạo file compose
-```bash
-nano compose.yaml
-```
-
-```bash
-docker compose up -d
-```
