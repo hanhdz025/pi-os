@@ -1,4 +1,6 @@
 ## Cài Đặt AdGuard Home
+AdGuard Home là một phần mềm lọc DNS giúp chặn quảng cáo và theo dõi trên toàn bộ mạng của bạn. Sử dụng Docker Compose giúp dễ dàng triển khai và quản lý AdGuard Home.
+
 #### Tạo thư mục AdGuard Home
 ```bash
 mkdir adguardhome
@@ -39,4 +41,12 @@ services:
 ```
 ```bash
 docker compose up -d
+```
+
+#### Cấu hình DNS Servers
+```
+https://dns10.quad9.net/dns-query
+https://dns.google/dns-query
+https://dns.cloudflare.com/dns-query
+https://dns.nextdns.io/5c699d
 ```
